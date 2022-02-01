@@ -1,0 +1,92 @@
+/*declarando variaveis*/
+
+:root {
+    --lilas: #d267ec;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--lilas);
+    margin-left: 5px;
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+
+/*cor dos links de navegação e margem entre cada um deles*/
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+
+/*para mudar a cor quando o mouse passar em cima dos links do menu*/
+
+header nav a:hover {
+    color: #fff;
+}
+
+.novela-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/capa-maria.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.novela-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.novela-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    /*espaçamento interno na caixa dos botões, serve para espaçar pra cima e para baixo e o segundo valor, para os lados*/
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    /*a setinha do cursor se transforma na maozinha clicando em cima dos links*/
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 5px;
+}
