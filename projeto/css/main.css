@@ -1,7 +1,7 @@
 /*declarando variaveis*/
 
 :root {
-    --lilas: #d267ec;
+    --vermelho: #ee2c2c;
     --preto: #141414;
 }
 
@@ -13,7 +13,7 @@
 
 body {
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -25,7 +25,7 @@ header .container {
 }
 
 header .logo {
-    color: var(--lilas);
+    color: var(--vermelho);
     margin-left: 5px;
     font-family: 'Arial Black', Times;
     font-size: 40px;
@@ -89,4 +89,18 @@ header nav a:hover {
 
 .botao i {
     margin-right: 5px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.novela-principal .container {
+    width: 70%;
+}
+
+.box-novelas {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
